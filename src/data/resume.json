@@ -1,0 +1,90 @@
+{
+  "personalInfo": {
+    "name": "Sabyasachi Sahoo",
+    "title": "Senior Front-End Developer",
+    "location": "Bengaluru, Karnataka",
+    "email": "sss193959@gmail.com",
+    "phone": "+91-7205193959",
+    "linkedin": "https://linkedin.com/in/developersabya",
+    "summary": "Senior Front-End Developer with 10+ years of experience building scalable, high-performance web applications for banking, healthcare, retail, and technology domains. Expert in React (Hooks, Context API), Angular, Vue.js, and TypeScript with proven success in delivering trading platforms, investment dashboards, and enterprise-scale portals for Fortune 500 clients. Skilled in modern UI architecture, responsive design, performance optimization, accessibility, and automated testing. Strong leadership in Agile/Scrum, mentoring, stakeholder collaboration, and cross-functional delivery. Hands-on with Generative AI integration, micro frontends, and cloud deployment."
+  },
+  "skills": [
+    "React.js",
+    "Angular",
+    "Vue.js",
+    "TypeScript",
+    "Next.js",
+    "TailwindCSS",
+    "Redux",
+    "Context API",
+    "RxJS",
+    "Jest",
+    "Cypress",
+    "Webpack",
+    "Micro Frontends",
+    "Agile/Scrum",
+    "Generative AI"
+  ],
+  "experience": [
+    {
+      "company": "Deloitte",
+      "position": "Senior Consultant",
+      "duration": "Jan 2020 – Present",
+      "achievements": [
+        "Led front-end teams for Leading Financial Firm in US trading platforms improving execution speed by 25%",
+        "Architected micro-frontend portals scaling 30% faster",
+        "Built React + AI automation reducing research time by 40%"
+      ]
+    },
+    {
+      "company": "EPAM",
+      "position": "Software Engineer",
+      "duration": "Aug 2019 – Dec 2019",
+      "achievements": [
+        "Built Angular apps boosting engagement by 15%"
+      ]
+    },
+    {
+      "company": "TCS",
+      "position": "IT Analyst",
+      "duration": "Mar 2015 – Aug 2019",
+      "achievements": [
+        "Developed dashboards for Leading Investing/Financial Services Organization in US using Angular/Vue/TypeScript",
+        "Enhanced performance reducing load time by 35%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech, Electrical Engineering",
+      "institution": "Government College of Engineering, Keonjhar",
+      "duration": "2010–2014"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Leading Financial Firm in US Trading Platform",
+      "description": "Led front-end development for high-frequency trading platforms, improving execution speed by 25% through optimized React architecture and real-time data visualization.",
+      "technologies": ["React.js", "TypeScript", "D3.js"],
+      "status": "Production"
+    },
+    {
+      "title": "Micro-Frontend Portal Architecture",
+      "description": "Architected and implemented micro-frontend solutions that enabled 30% faster scaling and improved developer productivity across multiple teams.",
+      "technologies": ["React.js", "Module Federation"],
+      "status": "Production"
+    },
+    {
+      "title": "AI-Powered Research Automation",
+      "description": "Built React application integrated with Generative AI to automate research processes, reducing manual research time by 40%.",
+      "technologies": ["React.js", "Generative AI", "Node.js", "Python"],
+      "status": "Production"
+    },
+    {
+      "title": "Dashboard for Leading Financial Services Organization",
+      "description": "Developed comprehensive investment tracking dashboards with enhanced performance optimization, reducing load time by 35%.",
+      "technologies": ["Angular", "Vue.js", "TypeScript", "REST APIs"],
+      "status": "Production"
+    }
+  ]
+}
