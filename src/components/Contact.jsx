@@ -22,8 +22,53 @@ const Contact = () => {
     });
   };
 
+  // Simple disposable/fake email domains list (expand as needed)
+  const fakeEmailDomains = [
+    'mailinator.com', '10minutemail.com', 'guerrillamail.com', 'tempmail.com',
+    'yopmail.com', 'dispostable.com', 'fakeinbox.com', 'trashmail.com', 'getnada.com',
+    'sharklasers.com', 'spamgourmet.com', 'maildrop.cc', 'mintemail.com', 'throwawaymail.com',
+    'emailondeck.com', 'moakt.com', 'mytemp.email', 'temp-mail.org', 'mailnesia.com',
+    'mailcatch.com', 'inboxkitten.com', 'spam4.me', 'mailnull.com', 'openmailbox.org',
+    'luxusmail.org', 'tempail.com', 'fakemail.net', 'tempinbox.com', 'discard.email',
+    'mail-temp.com', 'mailbox52.ga', 'mailbox92.biz', 'mailbox72.biz', 'mailbox32.biz',
+    'mailbox22.biz', 'mailbox42.biz', 'mailbox62.biz', 'mailbox82.biz', 'mailbox12.biz',
+    'mailbox2.biz', 'mailbox3.biz', 'mailbox4.biz', 'mailbox5.biz', 'mailbox6.biz',
+    'mailbox7.biz', 'mailbox8.biz', 'mailbox9.biz', 'mailbox10.biz', 'mailbox11.biz',
+    'mailbox13.biz', 'mailbox14.biz', 'mailbox15.biz', 'mailbox16.biz', 'mailbox17.biz',
+    'mailbox18.biz', 'mailbox19.biz', 'mailbox20.biz', 'mailbox21.biz', 'mailbox23.biz',
+    'mailbox24.biz', 'mailbox25.biz', 'mailbox26.biz', 'mailbox27.biz', 'mailbox28.biz',
+    'mailbox29.biz', 'mailbox30.biz', 'mailbox31.biz', 'mailbox33.biz', 'mailbox34.biz',
+    'mailbox35.biz', 'mailbox36.biz', 'mailbox37.biz', 'mailbox38.biz', 'mailbox39.biz',
+    'mailbox40.biz', 'mailbox41.biz', 'mailbox43.biz', 'mailbox44.biz', 'mailbox45.biz',
+    'mailbox46.biz', 'mailbox47.biz', 'mailbox48.biz', 'mailbox49.biz', 'mailbox50.biz',
+    'mailbox51.biz', 'mailbox53.biz', 'mailbox54.biz', 'mailbox55.biz', 'mailbox56.biz',
+    'mailbox57.biz', 'mailbox58.biz', 'mailbox59.biz', 'mailbox60.biz', 'mailbox61.biz',
+    'mailbox63.biz', 'mailbox64.biz', 'mailbox65.biz', 'mailbox66.biz', 'mailbox67.biz',
+    'mailbox68.biz', 'mailbox69.biz', 'mailbox70.biz', 'mailbox71.biz', 'mailbox73.biz',
+    'mailbox74.biz', 'mailbox75.biz', 'mailbox76.biz', 'mailbox77.biz', 'mailbox78.biz',
+    'mailbox79.biz', 'mailbox80.biz', 'mailbox81.biz', 'mailbox83.biz', 'mailbox84.biz',
+    'mailbox85.biz', 'mailbox86.biz', 'mailbox87.biz', 'mailbox88.biz', 'mailbox89.biz',
+    'mailbox90.biz', 'mailbox91.biz', 'mailbox93.biz', 'mailbox94.biz', 'mailbox95.biz',
+    'mailbox96.biz', 'mailbox97.biz', 'mailbox98.biz', 'mailbox99.biz', 'mailbox100.biz'
+  ];
+
+  function isFakeEmail(email) {
+    const domain = email.split('@')[1]?.toLowerCase();
+    return fakeEmailDomains.includes(domain);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (isFakeEmail(formData.email)) {
+      toast({
+        title: "Invalid email address.",
+        description: "Please use a real email address (disposable/fake emails are not allowed).",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Replace these with your actual EmailJS service, template, and public key
